@@ -10,10 +10,19 @@ class AguilaCalva extends Aguila{}
 public class Question26 {
 	
 	public static void main(String[] args) {
-		getAnimal(new Aguila());
+		
+		//UPCASTING (CAST IMPLICITO)
+		AguilaCalva ac = new AguilaCalva();
+		Aguila a = ac;
+		
+		//DOWNCASTING (CAST EXPLICITO)
+		Animal animal = new AguilaCalva();
+		Aguila aguila = (Aguila) animal;
+		
+		getAnimal("Hola");
 	}
 
-	private static void getAnimal(Animal animal) {
+	private static void getAnimal(Object animal) {
 		System.out.println("Paso!!!");
 	}
 }
