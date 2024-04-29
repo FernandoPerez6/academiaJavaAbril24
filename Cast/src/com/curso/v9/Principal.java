@@ -18,6 +18,8 @@ public class Principal {
 		
 		((Ave)obj1).volar();
 		
+		
+		
 	}
 
 	private static Aguila getAguila() {
