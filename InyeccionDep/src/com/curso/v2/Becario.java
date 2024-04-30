@@ -5,7 +5,7 @@ public class Becario {
 	//HAS-A
 	String nombre;
 	//BAJO ACOPLAMIENTO
-	Computadora compu;
+	Computadora compu; //Interface
 	
 	public Becario(String nombre) {
 		this.nombre = nombre;

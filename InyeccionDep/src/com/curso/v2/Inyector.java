@@ -7,7 +7,7 @@ public class Inyector {
 	static Computadora cm = new ComputadoraMac("Sierra");
 	static Computadora cx = new ComputadoraMock("Duck");
 
-	
+	//Inyección por la variable (Interface)
 	static void inyectarComputadora(Becario bec,String tipo){
 		if (tipo=="W")
 			bec.compu = cw;

@@ -17,7 +17,7 @@ public class Principal {
 		becario2.trabajar();
 		
 		Becario becario3 = new Becario("Andronico");
-		Inyector.inyectarComputadora(becario3, "M");
+		Inyector.inyectarComputadora(becario3, "W");
 		becario3.trabajar();
 		
 		
