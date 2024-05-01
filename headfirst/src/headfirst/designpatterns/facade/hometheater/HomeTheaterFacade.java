@@ -1,6 +1,7 @@
 package headfirst.designpatterns.facade.hometheater;
 
 public class HomeTheaterFacade {
+	
 	Amplifier amp;
 	Tuner tuner;
 	StreamingPlayer player;

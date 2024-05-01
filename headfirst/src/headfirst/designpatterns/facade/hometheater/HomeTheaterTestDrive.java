@@ -1,7 +1,9 @@
 package headfirst.designpatterns.facade.hometheater;
 
 public class HomeTheaterTestDrive {
+	
 	public static void main(String[] args) {
+		
 		Amplifier amp = new Amplifier("Amplifier");
 		Tuner tuner = new Tuner("AM/FM Tuner", amp);
 		StreamingPlayer player = new StreamingPlayer("Streaming Player", amp);
@@ -16,6 +18,8 @@ public class HomeTheaterTestDrive {
 						projector, screen, lights, popper);
  
 		homeTheater.watchMovie("Raiders of the Lost Ark");
+		System.out.println("*********************");
 		homeTheater.endMovie();
 	}
+	
 }
