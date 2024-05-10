@@ -7,7 +7,7 @@ public class Pato{
 	float peso; //0.0
 	
 	//Variable de Clase
-	static int contador; //0
+	public static int contador; //0
 	
 	public Pato(String name, float peso) {
 		super();
@@ -17,7 +17,7 @@ public class Pato{
 	}
 	
 	//Método Clase
-	static int getContador() {
+	public static int getContador() {
 		return contador;
 	}
 
