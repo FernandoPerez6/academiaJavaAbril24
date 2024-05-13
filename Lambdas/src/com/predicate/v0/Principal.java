@@ -8,7 +8,7 @@ public class Principal {
 		Predicado pre1 = x -> x.endsWith("z");
 		
 		//EJECUTAR LAMBDA
-		boolean r = pre1.probar("Javaz");
+		boolean r = pre1.probar("Javax");
 		
 		System.out.println(r);
 		
