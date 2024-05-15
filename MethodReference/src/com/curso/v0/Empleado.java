@@ -14,5 +14,14 @@ public class Empleado {
 		e.sueldo = e.sueldo * 1.10;
 	}
 	
+	static boolean isRich(Empleado e) {
+		return e.sueldo > 1_000;
+	}
+	
+	static boolean isRichWithIncrement(Empleado e, double incremento) {
+		e.sueldo = e.sueldo + incremento;
+		return e.sueldo > 1_000;
+	}
+	
 
 }

@@ -6,12 +6,12 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		Object obj1 = getAguila();
+		Aguila obj1 = getAguila();
 		
 		if (obj1 instanceof AguilaCalva) {	
 			System.out.println(((AguilaCalva)obj1).tipo);
 			((AguilaCalva)obj1).volarAguilaCalva();
-		}else {
+		}else if (obj1 instanceof AguilaReal){
 			System.out.println(((AguilaReal)obj1).tipo);
 			((AguilaReal)obj1).volarAguilaReal();
 		}
@@ -26,10 +26,11 @@ public class Principal {
 		
 		Aguila[] arregloAguila = {
 			new AguilaCalva(),
-			new AguilaReal()
+			new AguilaReal(),
+			new Aguila()
 		};
 		
-		int aleatorio = new Random().nextInt(2);
+		int aleatorio = new Random().nextInt(3);
 		
 		Aguila a = arregloAguila[aleatorio];
 		
